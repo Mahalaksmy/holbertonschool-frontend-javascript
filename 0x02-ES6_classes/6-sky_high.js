@@ -1,0 +1,21 @@
+// eslint-disable-next-line no-unused-vars
+import Building from './5-building';
+
+export default class SkyHighBuilding extends Building {
+  constructor(sqft, floors) {
+    super(sqft);
+    this._floors = floors;
+  }
+
+  get floors() {
+    return this._floors;
+  }
+
+  set floors(Floors) {
+    this._floors = Floors;
+  }
+
+  evacuationWarningMessage() {
+    return `Evacuate slowly the ${this.floors} floors`;
+  }
+}
