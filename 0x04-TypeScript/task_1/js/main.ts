@@ -20,4 +20,10 @@ const teacher3: Teacher = {
   location: 'Uruguay',
   contract: false,
 };
-  console.log(teacher3);
+console.log(teacher3);
+
+
+// This is a function printTeacher:
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
