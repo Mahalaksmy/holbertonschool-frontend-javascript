@@ -9,6 +9,10 @@ interface Teacher {
   [propName: string]: any;
 }
 
+// Thi is interface named Directors that extends Teacher.
+interface Directors extends Teacher {
+  numberOfReports: number;
+
 const teacher3: Teacher = {
   firstName: 'Javier',
   lastName: 'Doe',
